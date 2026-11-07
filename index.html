@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Minimal Jewellery - Discover timeless, elegant and everyday jewellery.">
+    <title>Minimal Jewellery | Elegance in Simplicity</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        ✨ A little luxury, delivered to your doorstep. Free shipping on orders above ₹999.
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            MINIMAL<span>.</span>
+            <small>JEWELLERY</small>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#products">Shop</a>
+            <a href="#about">Our Story</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-icons">
+
+            <button class="icon-btn" id="searchBtn" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+                <span class="count" id="wishlistCount">0</span>
+            </button>
+
+            <button class="icon-btn" id="cartBtn" aria-label="Shopping cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="count" id="cartCount">0</span>
+            </button>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- Search Box -->
+    <div class="search-box" id="searchBox">
+        <input type="text" id="searchInput" placeholder="Search your favourite jewellery...">
+        <button id="closeSearch" aria-label="Close search">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">TIMELESS BEAUTY. EVERYDAY LUXURY.</p>
+
+            <h1>
+                Elegance is<br>
+                in the <span>little things.</span>
+            </h1>
+
+            <p class="hero-description">
+                Jewellery that feels like you. Discover delicate,
+                timeless pieces designed to make every moment special.
+            </p>
+
+            <a href="#products" class="primary-btn">
+                Explore Collection <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <div class="hero-note">
+                <span></span>
+                Made to be treasured, made for you.
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1100&q=85"
+                alt="Elegant gold jewellery collection"
+            >
+
+            <div class="floating-card">
+                <span>THE SIGNATURE EDIT</span>
+                <h3>Less, but lovely.</h3>
+                <p>Discover your everyday favourites.</p>
+            </div>
+        </div>
+
+        <div class="hero-number">01 / 03</div>
+
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+
+        <div class="feature">
+            <i class="fa-solid fa-gem"></i>
+            <div>
+                <h4>Thoughtful Designs</h4>
+                <p>Details that make a difference</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-box-open"></i>
+            <div>
+                <h4>Beautiful Packaging</h4>
+                <p>A special unboxing experience</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+                <h4>Free Shipping</h4>
+                <p>On orders above ₹999</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-heart"></i>
+            <div>
+                <h4>Made With Love</h4>
+                <p>Jewellery to treasure forever</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Collections -->
+    <section class="collections section-padding" id="collections">
+
+        <div class="section-heading">
+            <p class="eyebrow">FIND YOUR FAVOURITE</p>
+            <h2>Curated Collections</h2>
+            <p>Little details. Beautiful stories. Endless elegance.</p>
+        </div>
+
+        <div class="collection-grid">
+
+            <a href="#products" class="collection-card" data-category="Necklaces">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=85" alt="Elegant necklaces">
+                <div class="collection-overlay">
+                    <span>01 / COLLECTION</span>
+                    <h3>Necklaces</h3>
+                    <p>Discover more <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </a>
+
+            <a href="#products" class="collection-card" data-category="Earrings">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=85" alt="Beautiful earrings">
+                <div class="collection-overlay">
+                    <span>02 / COLLECTION</span>
+                    <h3>Earrings</h3>
+                    <p>Discover more <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </a>
+
+            <a href="#products" class="collection-card" data-category="Bracelets">
+                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=85" alt="Minimal bracelets">
+                <div class="collection-overlay">
+                    <span>03 / COLLECTION</span>
+                    <h3>Bracelets</h3>
+                    <p>Discover more <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Products -->
+    <section class="products section-padding" id="products">
+
+        <div class="section-heading">
+            <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+            <h2>Our Bestsellers</h2>
+            <p>Pieces you'll reach for, again and again.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-buttons">
+
+            <button class="filter-btn active" data-filter="All">All Pieces</button>
+            <button class="filter-btn" data-filter="Necklaces">Necklaces</button>
+            <button class="filter-btn" data-filter="Earrings">Earrings</button>
+            <button class="filter-btn" data-filter="Bracelets">Bracelets</button>
+            <button class="filter-btn" data-filter="Rings">Rings</button>
+
+        </div>
+
+        <!-- Product Cards Generated By JavaScript -->
+        <div class="product-grid" id="productGrid"></div>
+
+        <div class="view-all">
+            <button class="outline-btn" id="viewAllBtn">
+                View All Products <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Promotional Banner -->
+    <section class="promo">
+
+        <div class="promo-content">
+            <p class="eyebrow">A GIFT THAT SPEAKS FROM THE HEART</p>
+            <h2>Some things are<br>simply <span>forever.</span></h2>
+            <p>Make every occasion a little more memorable with a thoughtful piece of jewellery.</p>
+            <a href="#products" class="primary-btn">Shop Gifts <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="promo-image">
+            <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1000&q=85" alt="Luxury jewellery gift">
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section class="about section-padding" id="about">
+
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=85" alt="Minimal jewellery details">
+        </div>
+
+        <div class="about-content">
+
+            <p class="eyebrow">OUR LITTLE STORY</p>
+
+            <h2>Beauty in simplicity.<br>Meaning in every detail.</h2>
+
+            <p>
+                At Minimal Jewellery, we believe that true elegance
+                doesn't need to be loud. It's found in the delicate
+                details, thoughtful designs and little things that
+                make you feel special.
+            </p>
+
+            <p>
+                Every piece is chosen to complement your everyday
+                moments and celebrate your individuality.
+            </p>
+
+            <a href="#contact" class="text-link">
+                Get to know us <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Quote -->
+    <section class="quote-section">
+
+        <span class="quote-mark">“</span>
+
+        <h2>
+            Jewellery is not just an accessory.<br>
+            It's a feeling you carry with you.
+        </h2>
+
+        <p>THE MINIMAL PROMISE</p>
+
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+
+        <div>
+            <p class="eyebrow">A LITTLE LOVE IN YOUR INBOX</p>
+            <h2>Stay in the loop.</h2>
+            <p>Get first access to new arrivals, special offers and little surprises.</p>
+        </div>
+
+        <form id="newsletterForm">
+
+            <div class="newsletter-input">
+                <input type="email" id="emailInput" placeholder="Enter your email address" required>
+                <button type="submit" aria-label="Subscribe">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <small id="newsletterMessage">No spam, just beautiful things.</small>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo footer-logo">
+                    MINIMAL<span>.</span>
+                    <small>JEWELLERY</small>
+                </a>
+
+                <p>
+                    Delicate designs, timeless elegance.
+                    A little luxury for your everyday moments.
+                </p>
+
+                <div class="social-icons">
+                    <a href="https://instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://pinterest.com/" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="https://facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+                <h4>EXPLORE</h4>
+                <a href="#home">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#products">Shop All</a>
+                <a href="#about">Our Story</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>HELP</h4>
+                <a href="#contact">Contact Us</a>
+                <a href="#contact">Shipping Policy</a>
+                <a href="#contact">Returns & Exchange</a>
+                <a href="#contact">FAQs</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>GET IN TOUCH</h4>
+                <p><i class="fa-regular fa-envelope"></i> hello@minimaljewellery.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa-solid fa-location-dot"></i> Mumbai, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Minimal Jewellery. All rights reserved.</p>
+            <p>Made with <span>♥</span> and a little sparkle.</p>
+        </div>
+
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+            <h3>Your Shopping Bag</h3>
+            <button id="closeCart" aria-label="Close cart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your bag is waiting for something lovely ♡</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Subtotal</span>
+                <strong id="cartTotal">₹0</strong>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">
+                Continue Shopping <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <p>Shipping calculated at checkout.</p>
+        </div>
+
+    </aside>
+
+    <!-- Toast Message -->
+    <div class="toast" id="toast"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
